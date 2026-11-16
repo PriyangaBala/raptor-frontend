@@ -7,8 +7,9 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://localhost:8000',
-        changeOrigin: true
+        target: 'https://raptor360-backend.onrender.com',
+        changeOrigin: true,
+        secure: false,
       }
     }
   }
